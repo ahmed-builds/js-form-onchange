@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: 0.3s all ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: "Inter";
+}
+main {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.form_container, .form_output {
+    width: 50%;
+    padding: 2rem;
+}
+.form_output {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.form-control {
+    width: 100%;
+    border-radius: 0;
+    padding: 0.5rem;
+    border: 1px solid #959191;
+}
+input:focus, input:focus-visible, input:focus-within {
+    border: 1px solid #000000;
+    border-radius: 0;
+    outline: 0px;
+    box-shadow: 0px 0px 1px rgb(95, 148, 233);
+}
+textarea {
+    resize: vertical;
+    height: 10rem;
+}
+.form-row {
+    display: flex;
+    margin: 1rem 0rem;
+}
+.formQuestn {
+    text-align: right;
+}
+.formResult {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.table {
+    width: 100%;
+}
+.table-no-border {
+    border: 0px;
+}
+.table-no-border td {
+    padding: 1rem;
+}

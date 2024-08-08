@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - onChange | Ahmed Mohammed</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="form_container">
+            <h1>The entered details gets populated on changes in the form</h1>
+            <form action="" onchange="updateForm()">
+                <div class="form-row">
+                    <input type="text" name="getName" id="getName" class="form-control" placeholder="Enter Name" autofocus>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="getEmail" id="getEmail" class="form-control" placeholder="Enter eMail">
+                </div>
+                <div class="form-row">
+                    <input type="tel" name="getMobile" id="getMobile" class="form-control" placeholder="Enter Mobile">
+                </div>
+                <div class="form-row">
+                    <textarea name="getMessage" id="getMessage" class="form-control" placeholder="Enter Message"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="form_output">            
+            <h1>Entered Details</h1>
+            <table class="table table-no-border">
+                <tr>
+                    <td class="formQuestn">Name: </td>
+                    <td class="formResult" id="populateName"></td>
+                </tr>
+                <tr>
+                    <td class="formQuestn">Email: </td>
+                    <td class="formResult" id="populateMail"></td>
+                </tr>
+                <tr>
+                    <td class="formQuestn">Mobile: </td>
+                    <td class="formResult" id="populateMobl"></td>
+                </tr>
+                <tr>
+                    <td class="formQuestn">Message: </td>
+                    <td class="formResult" id="populateMesg"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
